@@ -585,6 +585,7 @@ img {
   }
   .p-header-popup .list {
     flex-direction: row;
+    overflow: auto;
   }
   .p-header-popup .list .list-item {
     flex-shrink: 0;
@@ -612,5 +613,14 @@ img {
   }
   .p-header-popup-search button {
     top: 6px;
+  }
+  .p-header-content {
+    display: none;
+  }
+  .p-header-navigation {
+    display: none;
+  }
+  .p-header-bottom {
+    display: none;
   }
 }
