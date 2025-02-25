@@ -153,6 +153,13 @@
                 Заказать звонок
               </button>
             </div>
+            <div
+              class="burger burger-top"
+              data-open="popup-menu"
+              aria-hidden="true"
+            >
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
@@ -161,7 +168,7 @@
           <nav class="p-header-nav">
             <ul class="list">
               <li class="item">
-                <button class="nav-btn">
+                <button class="nav-btn" data-open="popup-menu">
                   <div class="burger" aria-hidden="true">
                     <span></span>
                   </div>
@@ -257,6 +264,23 @@
       <div class="p-header-popup">
         <div class="p-header-popup-container">
           <div class="p-header-popup-top">
+            <div class="p-header-popup-close" data-close-popup>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 6L6 18M6 6L18 18"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
             <a class="logo" href="">
               <img src="./logo-dark.png" alt="Профи китчен" />
             </a>
@@ -280,7 +304,17 @@
               </button>
             </div>
           </div>
-
+          <div class="popup-nav-mobile">
+            <nav class="popup-nav-mobile-nav">
+              <ul class="list">
+                <li class="item"><a href="">Цены</a></li>
+                <li class="item"><a href="">О компании</a></li>
+                <li class="item"><a href="">FAQ</a></li>
+                <li class="item"><a href="">Блог</a></li>
+                <li class="item"><a href="">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
           <div class="p-header-popup-content">
             <div class="p-header-popup-wrapper">
               <div class="p-header-popup-block">
@@ -373,9 +407,179 @@
               </div>
             </div>
             <div class="p-header-popup-nav">
-              <div class="p-header-popup-nav-block" data-opener="bar">
+              <div class="p-header-popup-nav-block _active" data-opener="bar">
                 <div class="p-header-popup-title">
                   Оборудование по типу заведения
+                </div>
+                <div class="p-header-popup-tags">
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/rest.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Ресторан</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/stolovaya.png"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Столовая</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/waurma.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Точки продажи шаурмы</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/coffe.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Кофейня</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/coffe2.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Кофе с собой</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/pizza.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Пиццерия</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/burger.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Бургерная</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/pekar.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Пекарня</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/candy.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Кондитерская</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/sashl.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Шашлычная</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/meat.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Мясной цех</span>
+                  </a>
+                  <a href="">
+                    <div class="icon">
+                      <img
+                        src="./icons-tags/bli.svg"
+                        aria-hidden="true"
+                        width="24"
+                        height="24"
+                      />
+                    </div>
+                    <span>Блинная</span>
+                  </a>
+                </div>
+
+                <div class="p-header-popup-tags-links">
+                  <div class="links-block">
+                    <div class="letter">A</div>
+                    <ul class="links-list">
+                      <li><a href="">Аппараты для варки гарниров</a></li>
+                    </ul>
+                  </div>
+                  <div class="links-block">
+                    <div class="letter">Б</div>
+                    <ul class="links-list">
+                      <li><a href="">Блинные аппараты</a></li>
+                    </ul>
+                  </div>
+                  <div class="links-block">
+                    <div class="letter">В</div>
+                    <ul class="links-list">
+                      <li><a href="">Водонагреватели</a></li>
+                      <li><a href="">Варочные поверхности</a></li>
+                      <li><a href="">Вафельницы</a></li>
+                    </ul>
+                  </div>
+                  <div class="links-block">
+                    <div class="letter">Г</div>
+                    <ul class="links-list">
+                      <li><a href="">Грили</a></li>
+                      <li><a href="">Гриль для кур</a></li>
+                      <li><a href="">Гриль саламандра</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="p-header-popup-nav-block" data-opener="coffe">
+                <div class="p-header-popup-title">
+                  Оборудование по типу заведения 2
                 </div>
                 <div class="p-header-popup-tags">
                   <a href="">
@@ -548,5 +752,41 @@
         </div>
       </div>
     </header>
+
+    <script>
+      document.body.addEventListener('click', (e) => {
+        let target = e.target;
+        console.log(target);
+        if (target.dataset.open) openPopMenu(target);
+        if (
+          target.classList.contains('p-header-popup') ||
+          target.hasAttribute('data-close-popup')
+        )
+          closePopMenu(target);
+        if (target.dataset.openMenu) openMenuLinks(target);
+      });
+
+      function openMenuLinks(target) {
+        let id = target.dataset.openMenu;
+        const activeMenu = document.querySelector(
+          '.p-header-popup-nav-block._active'
+        );
+        const nextMenu = document.querySelector(`[data-opener="${id}"]`);
+        const activeLink = document.querySelector('.list-btn._active');
+
+        activeMenu.classList.remove('_active');
+        activeLink.classList.remove('_active');
+        nextMenu.classList.add('_active');
+        target.classList.add('_active');
+      }
+
+      function openPopMenu(target) {
+        document.querySelector('.p-header-popup').classList.add('_active');
+      }
+
+      function closePopMenu(target) {
+        document.querySelector('.p-header-popup').classList.remove('_active');
+      }
+    </script>
   </body>
 </html>
