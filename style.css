@@ -593,6 +593,7 @@ img {
   .p-header-popup-container {
     overflow-x: hidden;
     overflow-y: auto;
+    padding-bottom: 400px;
   }
   .p-header-popup .list .list-btn:after {
     display: none;
